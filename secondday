@@ -1,0 +1,43 @@
+说一下go语言的语法构成吧
+
+先是贴一段代码，，
+
+
+package main
+import "fmt"
+func main() {
+
+//数据类型的话是有int32 int64 uint32 /64（unsign int） string float32 以及float64 bool。。。
+//var 就是申明变量的意义
+//println和c里面的printf差不多，具体细节大同小异
+	var a string = "111111111111116666666666666"
+	fmt.Println(a)
+
+    // 声明一个变量并初始化
+    a = "RUNOOB"
+    fmt.Println(a)
+
+    // 没有初始化就为零值
+    var b int
+    fmt.Println(b)
+
+    // bool 零值为 false
+    var c bool
+    fmt.Println(c)
+}
+
+/********************
+    需要注意的是要申明的变量在变量类型的前面，，，，
+    然后是运行
+    我的运行环境是Ubuntu20.04下的vscode，需要安装go语言插件，里面有语法高亮等，这个是必须要安装的，其他随意
+    命令是vim demo.go
+    输入代码
+    然后按esc键输入分号wq，这样就算是写完源代码了
+    编译的命令为go build demo.go 
+    输出的结果为
+    RUNOOB
+    0
+    false
+    ok，这样就算是完成了
+    ******************/
+    
